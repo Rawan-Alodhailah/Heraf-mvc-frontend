@@ -1,0 +1,29 @@
+@{
+    Layout="~/Views/Shared/_AdminLayouts.cshtml";
+}
+<div class="hero-section text-white" style="background-image: url('/Images/حرفه5.jpg'); background-size: cover; background-position: top 25% right 0% ;width: 100%; height: 500px; display: flex; align-items: center; justify-content: center;">
+    <div style="background-color: rgba(128, 128, 128, 0.486); padding: 20px; border-radius: 12px; text-align: center;">
+        <h1 class="mt-5 text-center" style="color: #000000;">مرحبًا بك في لوحة تحكم الحرفي</h1>
+    </div>
+</div>
+<div class="containet" dir="rtl">
+    
+    <div class="row mt-5 text-center justify-content-center" style="color: #493628;">
+        <div class="col-md-5">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <div class="card-body">
+                    <h3 class="card-title">اضافة منتجات جديد</h3>
+                    <a asp-controller="Craftsman" asp-action="Products" class="btn text-center text-white mt-5" style="background-color: #493628;">اضافة</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <div class="card-body">
+                    <h3 class="card-title">الملف الشخصي</h3>
+                    <a asp-controller="Craftsman" asp-action="" class="btn text-center text-white mt-5" style="background-color: #493628;">تعديل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

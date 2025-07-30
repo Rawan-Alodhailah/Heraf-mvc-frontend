@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "عرض المنتج";
+}
+<!-- واجهة عرض المنتج -->
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <img src="/Images/فخار1.jpg" height="400px" width="400px" style="border-radius: 10px;">
+        </div>
+        <div class="col mt-5">
+            <ul class="list-unstyled" style="color: #493628;">
+                <li><h3>اسم المنتج: كوب فخار</h3></li>
+                <li><h4>فئة المنتج: فخار</h4></li>
+                <li><h4>وصف المنتج: كوب فخار ابيض اللون بشكل كتب وازهار</h4></li>
+                <li><h4>سعر المنتج: 25 ريال</h4></li>
+            </ul>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <a asp-action="Cart" class="btn" style="background-color: #493628; color: white;">اضف الى السلة</a>
+                <a asp-action="Index" class="btn" style="background-color: #493628; color: white;">مواصلة الشراء</a>
+            </div>
+        </div>
+    </div>
+</div>

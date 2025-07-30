@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "الرئيسية";
+}
+<!--hero section-->
+<div class="row">
+    <div class="hero-section text-white" style="background-image: url('/Images/حرفه.jpg'); background-size: cover; background-position: top 25% right 0% ;width: 100%; height: 700px; display: flex; align-items: center; justify-content: right;">
+        <div style="padding: 40px; border-radius: 12px; text-align: center;">
+            <h1>مرحبا بك في منصة الحِرف اليدوية</h1>
+            <h6>تسوق منتجات فريدة صنعة بأيدي سعودية</h6>
+            <a href="#" class="btn text-center text-white mt-3" style="background-color: #493628;">تسوق الآن</a>
+            <a href="Craftsman" class="btn text-center text-white mt-3" style="background-color: #493628;">سجل كحرفي</a>
+        </div>               
+    </div>
+</div>
+<!--bio-->
+<div id="bio" class="row mt-5 text-center justify-content-center" style=" color: #493628; padding: 10px; border-radius: 80px;">
+    <div class="col" >
+        <h2>منصة حِرف</h2>
+        <h6>منصة سعودية تدعم الحرفيين السعوديين لعرض اعمالهم</h6>
+    </div>
+</div>
+<div class="row mt-5 text-center justify-content-center" style=" color: #493628; padding: 10px; border-radius: 80px;">
+    <div class="col" >
+        <h2>للمشتريين</h2>
+        <h6>اكتشف تشكيلات فريدة, اضف لسلتك, وتابع طلباتك بسهوله!</h6>
+    </div>
+</div>
+<div class="row mt-5 text-center justify-content-center" style=" color: #493628; padding: 10px; border-radius: 80px;">
+    <div class="col">
+        <h2>للحرفيين</h2>
+        <h6>انشر منتجاتك, تابع طلباتك, وبدأ رحلتك في عالم التجارة الالكترونية</h6>
+    </div>
+</div>
+<!--classes section-->
+<div class="container mt-5">
+    <div class="row text-center justify-content-center" style="color: #493628;">
+        <h1>اكتشف الحِرف</h1>
+    </div>
+    <div class="row mt-5 text-center justify-content-center" style="color: #493628;">
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/حرفه2.jpg" alt="رسم" height="50%" style="border-radius: 10px;" class="card-img-top" >
+                <div class="card-body">
+                    <h3 class="card-title">الرسم</h3>
+                    <a asp-action="Explore" class="btn text-center text-white mt-5" style="background-color: #493628;">استكشف</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/حرفة3.jpg" alt="فخار" height="50%" style="border-radius: 10px;" class="card-img-top" >
+                <div class="card-body">
+                    <h3 class="card-title">فخار</h3>
+                    <a asp-action="Explore" class="btn text-center text-white mt-5" style="background-color: #493628;">استكشف</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/حرفه2.jpg" alt="خط" height="50%" style="border-radius: 10px;" class="card-img-top" >
+                <div class="card-body">
+                    <h3 class="card-title">الخط العربي</h3>
+                    <a asp-action="Explore" class="btn text-center text-white mt-3" style="background-color: #493628;">استكشف</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/حرفه.jpg" alt="خياطة" height="50%" style="border-radius: 10px;" class="card-img-top" >
+                <div class="card-body">
+                    <h3 class="card-title">الخياطة/التطريز</h3>
+                    <a asp-action="Explore" class="btn text-center text-white mt-3" style="background-color: #493628;">استكشف</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/حرفة4.jpg" alt="اخرى" height="50%" style="border-radius: 10px;" class="card-img-top" >
+                <div class="card-body">
+                    <h3 class="card-title">اخرى</h3>
+                    <a asp-action="Explore" class="btn text-center text-white mt-5" style="background-color: #493628;">استكشف</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--favorite products-->
+<div class="container">
+    <div class="row mt-5 text-center justify-content-center" style="color: #493628;">
+        <h1>افضل المنتجات</h1>
+        <h6>تسوق افضل المنتجات الحِرفية</h6>
+    </div>
+    <div class="row mt-5" style="color: #493628;"">
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">حقيبة</h6>
+                    <h5>حقيبة قماشية مطرزة بآية قرانية وزهور</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">30 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card h-100 shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--نشرة بريدية-->
+<div class="mt-5" style="background-color: #493628; color: white; padding: 50px 20px; border-radius: 30px 30px 0px 0px;">
+    <div class="container text-center">
+        <h1 class="mt-3">اشترك في النشرة البريدية</h1>
+        <p class="mt-3">كن اول من يعرف عن العروض الجديدة والمنتجات المميزة</p>
+        <form class="row justify-content-center">
+            <div class="col-md-6">
+                <input type="email" class=" form-control" placeholder="ادخل البريد الالكتروني" style="border-radius: 12px; direction: rtl;">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn w-100" style="background-color: rgb(215, 214, 197); color: #493628; border-radius: 12px;">إشترك</button>
+            </div>
+        </form>
+    </div>
+</div>

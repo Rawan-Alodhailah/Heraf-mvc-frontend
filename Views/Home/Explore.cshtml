@@ -1,0 +1,77 @@
+@{
+    ViewData["Title"] = "المنتجات";
+}
+<!--واجهة استكشف الفئات من المنتجات -->
+<div class="container">
+    <div class="row mt-5 text-center justify-content-center" style="color: #493628;">
+        <div class="col">
+            <h1>اكتشف جميع المنتجات في معرض (الرسم)</h1><!--اسم المعرض على حسب الفئة-->
+        </div>
+    </div>
+    <!--لوب يعرض المنتجات كل ثلاث اعمدة(كارد) بصف-->
+    <div class="row mt-5">
+        <div class="col mx-2">
+            <div class="card shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-2">
+            <div class="card shadow-sm" style="background-color: rgb(215, 214, 197); padding: 10px; border-radius: 20px;">
+                <img src="/Images/فخار1.jpg" class="card-img-top" style="border-radius: 10px;" height="50%" alt="صورة المنتج">
+                <div class="card-body text-end" style="direction: rtl;">
+                    <h6 class="text-muted">فخار</h6>
+                    <h5>كوب فخار بزينة نباتية</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-success fw-bold">25 ريال</h5>
+                        <a asp-action="Cart"><i class="bi bi-cart-fill" style="color: #493628;"></i></a>
+                    </div>
+                    <a asp-action="ProductsDetail" class="btn text-center text-white mt-5" style="background-color: #493628;">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

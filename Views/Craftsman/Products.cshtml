@@ -1,0 +1,93 @@
+@{
+    Layout="~/Views/Shared/_AdminLayouts.cshtml";
+}
+<h1 class="mt-5 text-center" style="color: #493628;">اضف منتجاتك</h1>
+<div class="container" dir="rtl">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: #493628;">
+                    <h4>اضافة منتج جديد</h4>
+                </div>
+                <div class="card-body" style="background-color: rgb(215, 214, 197);">
+                    <form asp-controller="Craftsman" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">اسم المنتج</label>
+                                <input type="text" class="form-controll" name="Name">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">سعر المنتج</label>
+                                <input type="text" class="form-controll" name="Price">
+                            </div>  
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label class="form-label">صورة المنتج</label>
+                                <input type="file" class="form-controll" name="Image" >
+                            </div>
+                            <div class="col">
+                                <label class="form-label">فئة المنتج</label>
+                                 <select class="form-select" name="claas">
+                                        <option>رسمة</option>
+                                        <option>خط</option>
+                                        <option>خياطة وتطريز</option>
+                                        <option>فخار</option>
+                                        <option>اخرى</option>   
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label class="form-label">وصف المنتج</label>
+                                <textarea class="form-controll" name="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col text-center">
+                                <button class="btn text-white" type="submit" style="background-color: #493628;">حفظ </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="text-muted">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: #493628;">
+                    <h4>بيانات المنتجات</h4>
+                </div>
+                <div class="card-body" style="background-color: rgb(215, 214, 197);">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                            <th>رقم المنتج</th>
+                            <th>اسم المنتج</th>
+                            <th>سعر المنتج</th>
+                            <th>وصف المنتج</th>
+                            <th>صورة المنتج</th>
+                            <th>فئة المنتج</th>
+                            <th colspan="2">اجراء</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @* @foreach(var item in Model){
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Description</td>
+                                    <td><a asp-action="DeleteProducts" asp-route-id="@item.Id" onclick="return confirm('هل انت متاكد من الحذف')"><i class="bi bi-trash-fill text-danger"></i></a></td>
+                                    <td><a asp-action="EditProducts" asp-route-id="@item.Id"><i class="bi bi-pencil-fill text-success"></i></a></td>
+                                </tr>
+                            } *@
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
